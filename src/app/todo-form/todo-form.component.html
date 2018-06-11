@@ -1,0 +1,9 @@
+<div>
+  <label for="ip">Nom de la tâche : </label>
+  <input type="text" name="ip" id="ip" [(ngModel)]="_title">
+
+  <label for="mc"></label>
+  <input type="checkbox" name="mc" id="mc" [(ngModel)]="_isDone">
+
+  <button (click)="handleClick()">Ajouter cette tâche</button>
+</div>
