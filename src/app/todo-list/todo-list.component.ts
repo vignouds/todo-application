@@ -30,6 +30,6 @@ export class TodoListComponent implements OnInit {
   constructor(private todoService: TodoServices) { }
 
   ngOnInit() {
-      this.todoService.getTodo().then(value => this.todos = value);
+      this.todoService.getTodo().then(value => this._todos = value);
   }
 }
